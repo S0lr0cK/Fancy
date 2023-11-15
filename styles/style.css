@@ -4,6 +4,7 @@ body{
     background-image: url("../fotos/Mapa/mapa-sin-background.png");
     background-repeat:no-repeat;
     background-attachment: fixed;
+    background-size: 50% 100vh;
     background-position: right center;
     background-color: rgba(11, 57, 182, 0.849);
 
