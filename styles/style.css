@@ -1,7 +1,7 @@
 body{
 
     margin: 0%;
-    background-image: url("../fotos/Mapa/mapa-sin-background.png");
+    background-image: url("../fotos/Mapa/mapa-sin-background.png"),url("../fotos/Mapa/mar2.avif");
     background-repeat:no-repeat;
     background-attachment: fixed;
     background-size: 50% 100vh;
