@@ -1,0 +1,11 @@
+body{
+
+    margin: 0%;
+    background-image: url("../fotos/Mapa/mapa-sin-background.png"),url("../fotos/Mapa/mar1.avif");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100vh;
+    background-position: right center;
+    background-color: rgba(11, 57, 182, 0.849);
+
+}
