@@ -1,74 +1,26 @@
-body{
-    margin: 0%;
-    background-color: rgb(147, 218, 240);
-
+.foto{
+    width: 100%;
+}
+.fotoInicio{
+    width: 100%;
 }
 
-.flex{
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+.logo{
 
+    position: absolute;
+    height: 200px;
+    z-index: 1;
 }
 
-.grid{  
-    height: 600px;
-    width: 477px;
-    background-image: url("../fotos/Mapa/mapabueno.png");
-    display: grid; 
-    grid-template-columns: repeat(477, 1fr);
-    grid-template-rows: repeat(600, 1fr);
-
+.icon{
+    height: 90px;
 }
 
-.boton{
-    border-radius: 50%;
+.btn{
+    position: absolute;
+    z-index: 2;
 }
 
-.caseta{
-    background-color: rgb(17, 0, 255);
-    grid-area: 295/210/305/220;
+.offcanvas-body{
 
 }
-
-
-.bonita{
-    background-color: aqua;
-    grid-area: 213/167/223/177;
-    
-}
-
-
-.candelaria{
-    background-color: blueviolet;
-    grid-area: 203/165/213/175;
-}
-
-
-.veta{
-    background-color: yellow;
-    grid-area: 183/157/193/167;
-}
-
-.tinizara{
-    background-color: rgb(255, 165, 47);
-    grid-area: 167/148/177/158;
-}
-
-.colorada{
-    background-color: rgb(49, 245, 75);
-    grid-area: 157/141/167/151;
-}
-
-.puntagorda{
-    background-color: rgb(243, 61, 219);
-    grid-area: 138/132/148/142;
-}
-
-.volcan{
-    background-color: rgb(221, 155, 67);
-    grid-area: 340/215/350/225;
-}
-
