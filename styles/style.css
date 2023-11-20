@@ -14,6 +14,11 @@
 
 .icon{
     height: 90px;
+    position: fixed;
+}
+
+.iconMenu{
+    height: 60px;
 }
 
 .btn{
@@ -22,5 +27,5 @@
 }
 
 .offcanvas-body{
-
+    font-size: 30px;
 }
