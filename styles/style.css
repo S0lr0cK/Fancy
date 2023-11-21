@@ -27,5 +27,26 @@
 }
 
 .offcanvas-body{
+    display: flex;
+    flex-direction: column;
     font-size: 30px;
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px;
+
 }
+
+.secondPart-Menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    gap: 50px;
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+    color: black;
+}
+
