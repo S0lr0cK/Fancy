@@ -21,11 +21,15 @@ img{
 }
 
 
-.aboutUs{
 
+.aboutUs{
+    
     margin-left: 50px;
     margin-top: 30vh;
 }
+
+
+
 
 .grid{  
     height: 600px;
@@ -40,14 +44,14 @@ img{
 .boton{
     border-radius: 50%;
 }
-
+/**
 .caseta{
     
     grid-area: 295/210/305/220;
 
 }
 
-
+*/
 .bonita{
     
     grid-area: 213/167/223/177;
