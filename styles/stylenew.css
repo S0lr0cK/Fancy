@@ -1,19 +1,113 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: 'Rubick', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.8;
-    background-color: rgb(147, 218, 240);
+    min-height: 100vh;
+    background: linear-gradient(to top, rgb(210, 244, 255), rgb(70, 172, 255));
 }
 
 .carousel-inner img{
     height: 600px;
     border-radius: 5%;
+    box-shadow: 10px 5px 20px black;
 }
 
 .text{
     text-align: center;
+    width: 500px;
+    margin-top: 30px;
+    margin-left: 230px;
+    font-size: 35px;
+}
+
+.text h5{
+    font-size: 50px;
+}
+
+.carousel {
+    position: relative!important;
+}           
+
+.carousel-control-next-icon, .carousel-control-prev-icon { 
+    visibility: hidden;
+}
+
+.info{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bubbles{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    z-index: -100;
+}
+
+.bubbles span{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: rgb(126, 214, 255);
+    border-radius: 50%;
+    box-shadow: 0 0 5 50px rgb(219, 242, 252),
+     0 5 400px rgb(163, 226, 255), 
+     0 5 700px rgb(163, 226, 255);
+    animation: animate 10s linear infinite;
+    animation-duration: calc(125s/ var(--i));
+}
+
+.bubbles span:nth-child(even){
+    background: rgb(163, 226, 255);
+    box-shadow: 0 0 10 50px rgb(219, 242, 252), 
+    0 10 60px rgb(126, 214, 255), 
+    0 10 100px rgb(126, 214, 255);
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-100vh) scale(1);
+    }
+}
+
+
+.otherbubs{
+    position: relative;
+    display: flex;
+}
+.otherbubs .uno{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to left,rgb(180, 236, 255), rgb(144, 205, 255));
+    border-radius: 50%;
+    left: -150px;
+    bottom: 75px;
+    box-shadow: 100px 10px 50px rgb(142, 214, 255);
+    z-index: -99;
+}
+.otherbubs .dos{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to right,rgb(210, 244, 255), rgb(145, 205, 255));
+    border-radius: 50%;
+    left: 150px;
+    bottom: -50px;
+    box-shadow: -100px -90px 50px rgb(142, 214, 255);
+    z-index: -98;
 }
