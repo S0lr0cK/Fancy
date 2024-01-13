@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Volcan de Tajogaite</title>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="../styles/stylePoints.css">
+    </head>
+    <body>
+
+        <div><a href="mapa.html"><i class="ri-arrow-go-back-line"></i></a></div>
+        <section class="section-info">
+            <div class="historia">
+                <h2>Volcanes de la palma</h2>
+                <p>En La Palma se pueden distinguir dos dominios volcánicos. 
+                    El dominio de Taburiente, en el tercio norte, es el más antiguo y destaca la Caldera de Taburiente y el Valle de las Angustias (seguramente pasasteis por aquí de camino al puerto), se eleva hasta los 2426m que es el punto más alto de la isla en el Roque de los Muchachos, y se encuentra totalmente inactivo. 
+                    El Dominio Dorsal corresponde a la mitad alargada hacia el sur, se distinguen dos sectores, sector norte o cumbre nueva de 7Km y el sector sur o cumbre vieja de 21.7Km. Es en el sector sur donde en los últimos 500 años se han producido 6 erupciones, siendo las dos más recientes (a excepción de el volcán de Tajogaite) la del volcán de Teneguía y el volcán de San Juan y uno de estos fue la razón por la que Tazacorte no quedó debajo de la lava, ya que sirvió de escudo y desviar la lava. 
+                </p>
+            </div>
+
+            <div class="cartas">
+                <div class="card primera">
+                    <div class="face front">
+                        <img  src="../images/volcan/2021-09-30FASDF.jpg" alt="imagen volcan">
+                        <p></p>
+                    </div>
+                    <div class="face back">
+                        <p>
+                            La erupción empezó el 19/9/2021, convirtiéndose así en el volcán más reciente de canarias, duró 58 días siendo el que estuvo más tiempo en erupción de los volcanes registrados en la isla. 
+                        </p>
+                    </div>
+                </div>
+                <div class="card segunda">
+                    <div class="face front">
+                        <img  src="../images/volcan/wreareg.jpg" alt="imagen volcan">
+                    </div>
+                    <div class="face back">
+                        <p>
+                            La erupción empezó el 19/9/2021, convirtiéndose así en el volcán más reciente de canarias, duró 58 días siendo el que estuvo más tiempo en erupción de los volcanes registrados en la isla. 
+                        </p>
+                    </div>
+                </div>
+                <div class="card tercera">
+                    <div class="face front">
+                        <img  src="../images/volcan/2021-11-26.jpg" alt="imagen volcan">
+                    </div>
+                    <div class="face back">
+                        <p>
+                            La erupción empezó el 19/9/2021, convirtiéndose así en el volcán más reciente de canarias, duró 58 días siendo el que estuvo más tiempo en erupción de los volcanes registrados en la isla. 
+                        </p>
+                    </div>
+                </div>
+                <div class="card cuarta">
+                    <div class="face front">
+                        <img  src="../images/volcan/c0973264-0880-4ebe-9239-bda2ba006be0_16-9-discover-aspect-ratio_default_0.webp" alt="imagen volcan">
+                    </div>
+                    <div class="face back">
+                        <p>
+                            La erupción empezó el 19/9/2021, convirtiéndose así en el volcán más reciente de canarias, duró 58 días siendo el que estuvo más tiempo en erupción de los volcanes registrados en la isla. 
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+                
+        </section>
+
+        <script>
+            const cardp = document.querySelector('.primera');
+            cardp.addEventListener('click', function(){
+                cardp.classList.toggle('is-flipped');
+            });
+            const cards = document.querySelector('.segunda');
+            cards.addEventListener('click', function(){
+                cards.classList.toggle('is-flipped');
+            });
+            const card3 = document.querySelector('.tercera');
+            card3.addEventListener('click', function(){
+                card3.classList.toggle('is-flipped');
+            });
+            const card4 = document.querySelector('.cuarta');
+            card4.addEventListener('click', function(){
+                card4.classList.toggle('is-flipped');
+            });
+        </script>
+    </body>
+
+</html>
