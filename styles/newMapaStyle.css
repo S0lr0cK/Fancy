@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 :root{
@@ -9,100 +7,26 @@
     --light-color: #f1f2f6;
     --black-color: #010924;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
 
-h1{
-    text-align: center;
-    font-size: 50px!important;
-}
-
 body{
-    font-family: 'Rubick', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.8;
-    min-height: 100vh;
-    background: linear-gradient(to top, rgb(210, 244, 255), rgb(70, 172, 255));
-}
-
-.carousel-inner img{
-    height: 600px;
-    border-radius: 5%;
-    box-shadow: 10px 5px 20px black;
-}
-
-.text{
-    text-align: center;
-    width: 900px;
-    margin-top: 30px;
-    margin-left: 50px;
-    font-size: 40px;
-}
-
-.text h5{
-    font-size: 50px;
-}
-
-.carousel {
-    position: relative!important;
-}           
-
-.carousel-control-next-icon, .carousel-control-prev-icon { 
-    visibility: hidden;
-}
-
-.info{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    /*overflow: hidden;*/
-}
-
-.bubbles{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    z-index: -100;
-}
-
-.bubbles span{
-    position: relative;
-    width: 200px;
-    height: 200px;
-    background: rgb(126, 214, 255);
-    border-radius: 50%;
-    box-shadow: 0 0 5 50px rgb(219, 242, 252),
-     0 5 400px rgb(163, 226, 255), 
-     0 5 700px rgb(163, 226, 255);
-    animation: animate 10s linear infinite;
-    animation-duration: calc(125s/ var(--i));
-}
-
-.bubbles span:nth-child(even){
-    background: rgb(163, 226, 255);
-    box-shadow: 0 0 10 50px rgb(219, 242, 252), 
-    0 10 60px rgb(126, 214, 255), 
-    0 10 100px rgb(126, 214, 255);
-}
-
-@keyframes animate {
-    0%{
-        transform: translateY(100vh) scale(0);
-    }
-    100%{
-        transform: translateY(-100vh) scale(1);
-    }
+    margin: 0%;
+    background-color: rgb(147, 218, 240);
 }
 
 .return{
+    
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 5px;
+
+    z-index: 10;
 }
 
 .return img{
@@ -110,11 +34,84 @@ body{
     z-index: 10;
 }
 
+.imagen{
+    width: 100%;
+    z-index: -10;
+}
+
+.mapa{
+    width: 100%;
+    height: 1550px;
+    background-image: url('../images/Mapa/mapabueno1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+}
+
+
+
+.pings{
+    height: 1550px;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+}
+
+.pings a{
+    text-decoration: none;
+    width: 100%;
+    font-size: 40px;
+}
+
+.cueva-bonita{
+    position: fixed;
+    left: 135px;
+    top: 830px;
+}
+
+.poris-candelaria{
+    position: fixed;
+    left: 120px;
+    top: 780px;
+}
+
+.playa-veta{
+    position: fixed;
+    left: 100px;
+    top: 730px;
+}
+
+.pozo-tinizara{
+    position: fixed;
+    left: 80px;
+    top: 670px;
+}
+
+.cueva-colorada{
+    position: fixed;
+    left: 50px;
+    top: 619px;
+}
+
+.poris-puntagorda{
+    position: fixed;
+    left: 10px;
+    top: 530px;
+}
+
+.volcan{
+    position: fixed;
+    left: 250px;
+    top: 1080px;
+}
+
 ul{
     list-style: none;
 }
 
 .naveg{
+    z-index: 100;
     width: 100%;
     height: 200px;
     display: flex;
@@ -262,22 +259,4 @@ nav .sub-menu li a {
 
 nav .sub-menu li a:hover {
     background-color: var(--primary-color);
-}
-
-.next{
-    height: 200px;
-
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.next a{
-    text-decoration: none;
-}
-
-.next a i{
-    font-size: 100px;
 }
