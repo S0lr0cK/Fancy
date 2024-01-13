@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mapa</title>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="../styles/newMapaStyle.css">
+    </head>
+    <body>
+        <section class="pagina">
+            <div class="return">
+                <a href="../index.html">
+                    <div>
+                      <img src="../images/LogoFancyTasyNormalWeb.avif" alt="return index" class="return">   
+                    </div>
+                  </a>
+            </div>
+            <div class="mapa">
+                <div class="pings">
+                    <a href="cuevaBonita.html" class="cueva-bonita"> <i class="ri-map-pin-line ">cueva Bonita</i></a>
+                    <a href="porisCandelaria.html" class="poris-candelaria"><i class="ri-map-pin-line ">Poris de Candelaria</i></a>
+                    <a href="playaVeta.html" class="playa-veta"><i class="ri-map-pin-line ">Playa de la Veta</i></a>
+                    <a href="pozoTinizara.html" class="pozo-tinizara"><i class="ri-map-pin-line ">Pozo Tinisara</i></a>
+                    <a href="cuevaColorada.html" class="cueva-colorada"><i class="ri-map-pin-line ">Cueva Colorada</i></a>
+                    <a href="porisPuntagorda.html" class="poris-puntagorda"><i class="ri-map-pin-line ">Poris de <br> Puntagorda</i></a>
+                    <a href="volcanTajogaite.html" class="volcan"><i class="ri-map-pin-line ">Volcan de Tajogaite</i></a>
+                </div>
+            </div>
+            
+            <div class="naveg">
+                <nav>
+                  <ul>
+                    <li><a href="../pages/mapaNew.html"><i class="ri-compass-3-line"></i></a></li> 
+                    <li><a href="#"><i class="ri-ship-line"></i></a></li> 
+                    <li class="has-child">
+                      <a href="#"><i class="ri-add-line"></i></a>
+                      <ul class="sub-menu">
+                        <li><a href="porisCandelaria.html"><i class="ri-arrow-drop-left-line"></i></a></li>
+                        <li><a href="https://www.instagram.com/fancy2fantasy/"><i class="ri-instagram-line"></i></a></li>
+                        <li><a href="volcanTajogaite.html"><i class="ri-arrow-drop-right-line"></i></a></li>
+                        
+                      </ul>
+                    </li> 
+                    <li><a href="#"><i class="ri-user-search-line"></i></a></li> 
+                    <li ><a href="#"><i class="ri-mickey-line"></i></a></li> 
+                    <li class="last"></li>
+                  </ul>
+                </nav>
+              </div>
+        </section>
+        
+
+    </body>
+
+    <script>
+        const trigger = document.querySelectorAll('nav li');
+        
+        trigger.forEach((menu) => menu.addEventListener('click', toggle));
+        function toggle(){
+          trigger.forEach((item) => item != this ? item.classList.remove('active') : null);
+          if(this.classList != 'active'){
+            this.classList.toggle('active');
+            
+          }
+        }
+    
+        const mas = document.querySelectorAll("has-child");
+        const cerrar = document.querySelectorAll("has-child a")
+    
+    
+      </script>
+
+</html>
