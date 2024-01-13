@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root{
+    --primary-color: #5a9bfd; 
+    --dark-color: #2366e0;
+    --white-color: #ffffff;
+    --light-color: #f1f2f6;
+    --black-color: #010924;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0%;
+    background-color: rgb(147, 218, 240);
+}
+
+.return{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    z-index: 10;
+}
+
+.return img{
+    height: 150px;
+    z-index: 10;
+}
+
+.imagen{
+    width: 100%;
+    z-index: -10;
+}
+
+.mapa{
+    width: 100%;
+    height: 1550px;
+    background-image: url('../images/Mapa/mapabueno1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+}
+
+
+
+.pings{
+    height: 1550px;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+}
+
+.pings a{
+    text-decoration: none;
+    width: 100%;
+    font-size: 40px;
+}
+
+.cueva-bonita{
+    position: fixed;
+    left: 135px;
+    top: 830px;
+}
+
+.poris-candelaria{
+    position: fixed;
+    left: 120px;
+    top: 780px;
+}
+
+.playa-veta{
+    position: fixed;
+    left: 100px;
+    top: 730px;
+}
+
+.pozo-tinizara{
+    position: fixed;
+    left: 80px;
+    top: 670px;
+}
+
+.cueva-colorada{
+    position: fixed;
+    left: 50px;
+    top: 619px;
+}
+
+.poris-puntagorda{
+    position: fixed;
+    left: 10px;
+    top: 530px;
+}
+
+.volcan{
+    position: fixed;
+    left: 250px;
+    bottom: 620px;
+}
+
+ul{
+    list-style: none;
+}
+
+.naveg{
+    z-index: 100;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 70px;
+
+
+    font-family: 'Rubick', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: var(--white-color);
+    background-color: transparent;
+    
+}
+
+nav{
+    background-color: var(--primary-color);
+
+    position: relative;
+    width: 700px;
+    height: 170px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 65px;
+}
+
+nav ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+nav :where(li, li a){
+    position: relative;
+}
+/**/
+
+nav li a {
+    
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+
+    width: 120px;
+    height: 120px;
+    margin: 0 ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 50px;
+    z-index: 10;
+    
+}
+
+nav > ul > li > a:hover{
+    text-shadow: 3px 5px 15px;
+}
+
+nav ul li.active > a {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    transform: translateY(-10px);
+    text-shadow: 3px 5px 15px;
+}
+
+
+nav li:nth-child(1).active ~ .last {
+    transform: translateX(calc(70px * 0));
+}
+nav li:nth-child(2).active ~ .last {
+    transform: translateX(calc(70px * 1));
+}
+nav li:nth-child(3).active ~ .last {
+    transform: translateX(calc(70px * 2));
+}
+nav li:nth-child(4).active ~ .last {
+    transform: translateX(calc(70px * 3));
+}
+nav li:nth-child(5).active ~ .last {
+    transform: translateX(calc(70px * 4));
+}
+
+
+nav li.has-child.active > a{
+    animation: jump 1s both;
+    transition: transform .1s 1s, background-color .1s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes jump {
+    0% {transform: translateY(-40px);}
+    20% {transform: translateY(-100px);}
+    40% {transform: translateY(-100px);}
+    60% {transform: translateY(-180px);}
+    80% {transform: translateY(-200px) scale(1.4);}
+    90% {transform: translateY(-180px) scale(1.4); background-color: var(--primary-color);}
+    100% {transform: translateY(-160px) scale(1); background-color: var(--dark-color);}
+}
+
+nav li.active > a > i{
+    transform: scale(1);
+    transition: transform .1s 1s;
+}
+nav li.has-child.active > a i{
+
+    transform: scale(0);
+} 
+
+nav .sub-menu{
+    position: absolute;
+    background-color: var(--dark-color);
+    left: -100%;
+    top: -160px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 55px;
+    z-index: 10;
+    clip-path: inset(0 250px 0 round 100px);
+}
+
+nav ul li.has-child.active > .sub-menu{
+    clip-path: inset(0 0 0 0);
+    transition: clip-path .3s;
+    transition-delay: 1s;
+}
+
+nav .sub-menu li a {
+    color: var(--white-color);
+    font-size: 45px;
+    border-radius: 50%;
+    margin: 0;
+    clip-path: inset(10px round 20px);
+    transition: background-color .3s, color .3s, clip-path .3s;
+}
+
+nav .sub-menu li a:hover {
+    background-color: var(--primary-color);
+}
