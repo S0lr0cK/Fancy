@@ -25,7 +25,7 @@ body{
     width: 100%;
     margin: 0%;
     background: linear-gradient(to top, rgb(210, 244, 255), rgb(70, 172, 255));
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .return{
@@ -35,18 +35,28 @@ body{
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 5px;
-
     z-index: 10;
 }
 
 .return img{
     height: 150px;
     z-index: 10;
+    border-radius: 25px;
+   /* box-shadow: 0px 3px 18px 3px rgba(0, 45, 104, 0.2);*/
+    
 }
-
+/*
+.return img:hover{
+    box-shadow: 10px 10px 10px 10px rgb(7, 92, 204, 0.3);
+}
+*/
 h1{
     text-align: center;
     font-size: 50px;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
 }
 
 .grupo{
@@ -57,6 +67,71 @@ h1{
     justify-content: center;
     z-index: -200;
 }
+.grupoA{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    z-index: -200;
+    margin-bottom: 250px;
+}
+.delfin{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+.calderon{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+.zifio{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+.orca{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+.ballena{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+.tortuga{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+.pajaro{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
 
 .barco{
     width: 850px;
@@ -66,18 +141,41 @@ h1{
     background-color: rgba(52, 160, 255, 0.5);
     z-index: 10;
     margin: 50px;
-    box-shadow: 10px 10px 10px 10px rgb(7, 92, 204, 0.3);
+    /* box-shadow: 0px 3px 18px 3px rgba(0, 45, 104, 0.8); este creo que quedaba mejor con la otra sombra
+    box-shadow: 10px 10px 10px 10px rgb(7, 92, 204, 0.3); este es mas una somra solo en una esquina*/
+    box-shadow: 0px 3px 18px 3px rgba(0, 45, 104, 0.4);
     overflow: hidden;
+}
+.animal{
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    background-color: rgba(52, 160, 255, 0.5);
+    z-index: 1;
+    margin: 50px;
+    /* box-shadow: 0px 3px 18px 3px rgba(0, 45, 104, 0.8); no se cual es mejor de los dos tipos de sombra, por ahora pondre todas las sombras de la pagina iguales
+    box-shadow: 10px 10px 10px 10px rgb(7, 92, 204, 0.3);*/
+    box-shadow: 0px 3px 18px 3px rgba(0, 45, 104, 0.6);
+}
+
+#dmular{
+    background-image: url("../images/Animales/Copia\ \(2\)\ de\ DSC06502.JPG");
+    background-size: cover;
+}
+#dmoteado{
+    background-image: url("../images/Animales/DSC06230.JPG");
+    background-size: cover;
 }
 
 .encabezado{
-    width: 500px;
+    height: 80px;
     position: relative;
     padding: 30px 30px 40px;
     
 }
 
-.encabezado:after{
+.barco .encabezado:after{
     content: '';
     display: block;
     position: absolute;
@@ -92,12 +190,17 @@ h1{
     background-image: linear-gradient(to bottom left, var(--primary-color) 10%, var(--secundario) 110%);
 }
 
-.encabezado h3{
+.barco .encabezado h3{
     font-size: 50px;
+    margin-right: 150px;
+}
+
+.animal .encabezado h3{
+    font-size: 40px;
+    margin-right: 200px;
 }
 
 .barco img{
-    margin-left: 140px;
     width: 500px;
     height: auto;
     border-radius: 50%;
@@ -106,6 +209,7 @@ h1{
     margin: 10px;
     
 }
+
 
 .olasgrupo{
     width: 850px;
@@ -191,6 +295,7 @@ h1{
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
     z-index: 200;
+    visibility: hidden;
 }
 .explicacion .ri-close-line{
     height: 200px;
@@ -201,21 +306,8 @@ h1{
     font-size: 100px;
 }
 
-.ri-instagram-line{
-    color: #ffffff;
-    font-size: 100px;
-}
-
-.fcy{
-    visibility: hidden;
-}
-
-.fsy{
-    visibility: hidden;
-}
-
 .fondo{
-    overflow: auto;
+    overflow-y: auto;
     height: 82svh;
     width: 865px;
     background-color: #000000e1;
@@ -233,7 +325,8 @@ h1{
     font-size: 60px;
 }
 .fondo img{
-    width: 90%;
+    width: 95%;
+    border-radius: 20px;
     
 }
 .fondo h3{
@@ -259,16 +352,25 @@ h1{
     width: 800px;
     color: #ffffff;
     text-align: center;
+    font-size: 30px;
 }
 .links{
     display: flex;
-    flex-flow: column;
     align-items: center;
     justify-content: center;
 }
 
 .insta{
     text-decoration: none;
+    font-size: 100px;
+    color: #ffffff;
+    margin: 50px;
+}
+.libro{
+    text-decoration: none;
+    font-size: 100px;
+    color: #ffffff;
+    margin: 50px;
 }
 
 #text{
