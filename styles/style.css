@@ -29,6 +29,15 @@ body{
     background: linear-gradient(to top, rgb(210, 244, 255), rgb(70, 172, 255));
 }
 
+@media (min-width: 425px) {
+
+    /* CSS for screens above or equal to 600px wide NO ME FUNCIONA BIEN va al reves??????? */
+    body{
+        visibility: hidden;
+        background: none;
+    }
+}
+
 .return{
     
     display: flex;
@@ -201,10 +210,3 @@ nav .sub-menu li a:hover {
 }
 
 
-@media (min-width: 768px) {
-
-    /* CSS for screens above or equal to 600px wide NO ME FUNCIONA BIEN va al reves??????? */
-    body{
-        visibility: hidden;
-    }
-}
