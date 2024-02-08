@@ -39,6 +39,8 @@ body{
     left: 38%;
 }
 
+/*En el movil el grid de los puntos esta demasiado arriba al igual que el texto*/
+
 
 .pings{
     position: relative;
@@ -67,7 +69,7 @@ body{
     width: 250px;
     position: relative;
     left: 690px;
-    top: 890px;
+    top: 950px;
     rotate: -5deg;
     
 }

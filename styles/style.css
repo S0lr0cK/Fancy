@@ -9,9 +9,11 @@
     --oscuro: rgb(31, 128, 255);
     --secundario: #94e6ff;
 }
-@media (min-width: 600px) {
 
-    /* CSS for screens above or equal to 600px wide */
+
+@media (min-width: 768px) {
+
+    /* CSS for screens above or equal to 600px wide NO ME FUNCIONA BIEN*/
     body{
         visibility: hidden;
     }
