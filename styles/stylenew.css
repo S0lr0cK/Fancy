@@ -20,11 +20,12 @@ h1{
 }
 
 body{
+    width: 100%;
+    min-height: 100vh;
     font-family: 'Rubick', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.8;
-    min-height: 100vh;
     background: linear-gradient(to top, rgb(210, 244, 255), rgb(70, 172, 255));
 }
 
@@ -36,10 +37,13 @@ body{
 
 .text{
     text-align: center;
-    width: 900px;
+    width: 100%!important;
     margin-top: 30px;
-    margin-left: 50px;
     font-size: 40px;
+    overflow: scroll;
+}
+.text p{
+    padding: 25px;
 }
 
 .text h5{
@@ -52,13 +56,6 @@ body{
 
 .carousel-control-next-icon, .carousel-control-prev-icon { 
     visibility: hidden;
-}
-
-.info{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    /*overflow: hidden;*/
 }
 
 .bubbles{
@@ -298,7 +295,7 @@ nav .sub-menu li a:hover {
     font-size: 100px;
 }
 .final{
-    margin-top: 200px;
+    margin-top: 10px;
     text-align: center;
     font-size: 30px;
 }

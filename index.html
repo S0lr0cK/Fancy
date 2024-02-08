@@ -1,53 +1,56 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Fancy&Fantasy</title>
+        <title>Sobre Nosotros</title>
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
-        <div class="todasFotos">
-            <img src="images/LogoFancyTasyNormalWeb.avif" alt="" class="logo">
-            <div class="fotodiv"><img src="images/Fancy.jpg" alt="fancy" class="foto"></div>
-            <div class="fotodiv"><img src="images/FANTASY.avif" alt="fantasy" class="foto"></div>
-            <div class="fotodiv"><img src="images/calderones.jpg" alt="calderones" class="foto"></div>
-            <div class="fotodiv"><img src="images/delfin saltando.jpg" alt="delfin saltando" class="foto"></div>
-            <div class="fotodiv"><img src="images/delfines-palma-mar.avif" alt="delfines palma mar" class="foto"></div>
-            <div class="fotodiv"><img src="images/tb_La entrada de la cueva desde el barco.jpg" alt="entrada a la cueva" class="foto"></div>
-            <div class="fotodiv"><img src="images/Barcos/fancy con deflfines.jpg" alt="" class="foto"></div>
+        <section class="pagina">
+            <div class="return">
+                <a href="index.html">
+                    <img src="images/LogoFancyTasyNormalWeb.avif" alt="return index" class="return">
+                </a>
             </div>
-        <div id="page" class="site">
-            <nav>
-                <ul>
-                    <li><a href="pages/mapaNew.html"><i class="ri-compass-3-line"></i></a></li> 
-                    <li><a href="pages/barcos.html"><i class="ri-ship-line"></i></a></li> 
-                    <li class="has-child">
+            <div class="contenido">
+
+            </div>
+
+            <div class="naveg">
+                <nav>
+                    <ul>
+                        <li><a href="pages/mapaNew.html"><i class="ri-compass-3-line"></i></a></li> 
+                        <li><a href="pages/barcos.html"><i class="ri-ship-line"></i></a></li> 
+                        <li class="has-child">
                         <a href="#"><i class="ri-add-line"></i></a>
                         <ul class="sub-menu">
                             <li><a href="https://www.instagram.com/fancy2fantasy/"><i class="ri-instagram-line"></i></a></li>
                             <li><a href="https://g.page/r/CcV0mEq232u8EB0/review"><i class="ri-star-line"></i></a></li>
-                            <li><a href="#"><i class="ri-shopping-bag-line"></i></a></li>
+                            <li><a href="#"><i class="ri-newspaper-line"></i></a></li>
                         </ul>
-                    </li> 
-                    <li><a href="pages/aboutUs.html"><i class="ri-user-search-line"></i></a></li> 
-                    <li ><a href="#"><i class="ri-mickey-line"></i></a></li> 
-                    <li class="last"></li>
-                </ul>
-            </nav>
-        </div>
-        <script>
+                        </li> 
+                        <li><a href="#"><i class="ri-user-search-line"></i></a></li> 
+                        <li ><a href="pages/animales.html"><i class="ri-mickey-line"></i></a></li> 
+                        <li class="last"></li>
+                    </ul>
+                </nav>
+            </div>
             
-            const trigger = document.querySelectorAll('nav li');
-            trigger.forEach((menu) => menu.addEventListener('click', toggle));
-            function toggle(){
-                trigger.forEach((item) => item != this ? item.classList.remove('active') : null);
-                if(this.classList != 'active'){
-                    this.classList.toggle('active');
-                }
-            }
-
-        </script>
+        </section>
+        
     </body>
+    <script>
+        const trigger = document.querySelectorAll('nav li');
+    
+        trigger.forEach((menu) => menu.addEventListener('click', toggle));
+        function toggle(){
+        trigger.forEach((item) => item != this ? item.classList.remove('active') : null);
+            if(this.classList != 'active'){
+                this.classList.toggle('active');
+            
+            }
+        }
+    </script>
+
 </html>
