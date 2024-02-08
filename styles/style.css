@@ -11,13 +11,7 @@
 }
 
 
-@media (max-width: 961px) {
 
-    /* CSS for screens above or equal to 600px wide NO ME FUNCIONA BIEN va al reves??????? */
-    body{
-        visibility: hidden;
-    }
-}
 
 * {
     margin: 0;
@@ -204,4 +198,13 @@ nav .sub-menu li a {
 
 nav .sub-menu li a:hover {
     background-color: var(--primary-color);
+}
+
+
+@media (min-width: 768px) {
+
+    /* CSS for screens above or equal to 600px wide NO ME FUNCIONA BIEN va al reves??????? */
+    body{
+        visibility: hidden;
+    }
 }
