@@ -29,12 +29,20 @@ body{
     background: linear-gradient(to top, rgb(210, 244, 255), rgb(70, 172, 255));
 }
 
+.error{
+    visibility: hidden;
+    text-align: center;
+}
+
 @media (min-width: 425px) {
 
     /* CSS for screens above or equal to 600px wide NO ME FUNCIONA BIEN va al reves??????? */
     body{
         visibility: hidden;
         background: none;
+    }
+    .error{
+        visibility: visible;
     }
 }
 
