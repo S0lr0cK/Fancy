@@ -11,9 +11,9 @@
 }
 
 
-@media (min-width: 768px) {
+@media (max-width: 961px) {
 
-    /* CSS for screens above or equal to 600px wide NO ME FUNCIONA BIEN*/
+    /* CSS for screens above or equal to 600px wide NO ME FUNCIONA BIEN va al reves??????? */
     body{
         visibility: hidden;
     }
