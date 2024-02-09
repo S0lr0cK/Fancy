@@ -27,7 +27,7 @@ body{
     width: 100%;
     margin: 0%;
     background-image: url("../images/Animales/Palma_W_Boot_0151_20121230_Formaat\ wijzigen.jpg");
-    background-position: bottom -70px right -400px;
+    background-position: bottom -90px right -400px;
     background-repeat: repeat; /* Do not repeat the image */
     /*background-size: cover;  Resize the background image to cover the entire container */
     /*
@@ -56,12 +56,10 @@ body{
 }
 
 .return{
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 5px;
-    margin-bottom: 2.5px;
     
     z-index: 10;
 }
@@ -87,13 +85,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 125px;
-    width: 125px;
+    height: 110px;
+    width: 110px;
     text-decoration: none;
     background-color: #2366e0;
     color: #94e6ff;
     border-radius: 30%;
-    margin-top: 30px;
+    margin-top: 15px;
     box-shadow: 0px 3px 18px 3px rgba(0, 45, 104, 0.6);
     
 }
