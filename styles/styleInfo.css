@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root{
+    --primary-color: #5a9bfd; 
+    --dark-color: #2366e0;
+    --white-color: #ffffff;
+    --light-color: #f1f2f6;
+    --black-color: #010924;
+    --oscuro: rgb(31, 128, 255);
+    --secundario: #94e6ff;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Rubick', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0%;
+    background: linear-gradient(to top, rgb(210, 244, 255), rgb(70, 172, 255));
+}
+
+.error{
+    visibility: hidden;
+    text-align: center;
+    position: fixed;
+    left: 28%;
+    top: 40%;
+}
+
+@media only screen and (min-width: 769px) {
+
+    body{
+        visibility: hidden;
+        background: none;
+    }
+    .error{
+        visibility: visible;
+    }
+}
+
+
+
+.pagina{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenido{
+    height: 100%;
+    width: 95%;
+        background-color: #2020201a; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(50px, auto);
+}
+
+.tablon{
+    background-color: rgba(252, 248, 3, 0.452);
+
+    text-align: center;
+    border-radius: 25px;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+   
+}
+.noticias{
+    display: flex;
+}
+.noticias div {
+    overflow: scroll;
+    height: 150px;
+    /* border: 2px solid black;
+    border-bottom: 0;
+    border-radius: 25px 25px 0 0 ; */
+    font-size: 14px;
+}
+
+.linkgoog{
+    height: 100px;
+    text-align: center;
+    background-color: rgba(255, 3, 45, 0.473);
+    border-radius: 25px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.parte1{
+    background-color: #2365e070;
+    border-radius: 25px 25px 0 0 ;
+    text-align: center;
+    grid-column: 3;
+    grid-row: 2;
+    height: 110px;
+}
+.parte2{
+    background-color: #2365e070;
+    border-radius: 25px 0 25px 25px;
+    grid-column: 1 / 4;
+    grid-row: 3 / 6;
+    text-align: center;
+    
+}
+
+.parte2 img{
+    border-radius: 25px;
+    width: 90%;
+    
+}
+
+.interior{
+    display: flex;
+    justify-content: center;
+}
+
+.interior img{
+    width: 110px;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 25px;
+}
+
+.malos img{
+    width: 100px;
+    height: auto;
+    border-radius: 25px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 769px) {
+
+    /* CSS for screens above or equal to 600px wide NO ME FUNCIONA BIEN va al reves??????? */
+    body{
+        visibility: hidden;
+        background: none;
+    }
+    .error{
+        visibility: visible;
+    }
+}
+
+.return{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 2.5px;
+
+    z-index: 10;
+}
+
+.return img{
+    height: 80px;
+    z-index: 10;
+}
+
+ul{
+    list-style: none;
+}
+
+.naveg{
+    z-index: 100;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 30px;
+
+
+    font-family: 'Rubick', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: var(--white-color);
+    background-color: transparent;
+    
+}
+
+nav{
+    background-color: var(--primary-color);
+
+    position: relative;
+    width: 300px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 33px;
+}
+
+nav ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+nav :where(li, li a){
+    position: relative;
+}
+/**/
+
+nav li a {
+    
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+
+    width: 50px;
+    height: 50px;
+    margin: 0 ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+    z-index: 10;
+    
+}
+
+nav > ul > li > a:hover{
+    text-shadow: 3px 5px 15px;
+}
+
+nav ul li.active > a {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    transform: translateY(-5px);
+    text-shadow: 3px 5px 15px;
+}
+
+
+nav li:nth-child(1).active ~ .last {
+    transform: translateX(calc(70px * 0));
+}
+nav li:nth-child(2).active ~ .last {
+    transform: translateX(calc(70px * 1));
+}
+nav li:nth-child(3).active ~ .last {
+    transform: translateX(calc(70px * 2));
+}
+nav li:nth-child(4).active ~ .last {
+    transform: translateX(calc(70px * 3));
+}
+nav li:nth-child(5).active ~ .last {
+    transform: translateX(calc(70px * 4));
+}
+
+
+nav li.has-child.active > a{
+    animation: jump 1s both;
+    transition: transform .1s 1s, background-color .1s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes jump {
+    0% {transform: translateY(-40px);}
+    20% {transform: translateY(-90px);}
+    40% {transform: translateY(-90px);}
+    60% {transform: translateY(-120px);}
+    80% {transform: translateY(-150px) ;}
+    90% {transform: translateY(-130px) ; background-color: var(--primary-color);}
+    100% {transform: translateY(-110px) ; background-color: var(--dark-color);}
+}
+
+nav li.active > a > i{
+    transform: scale(1);
+    transition: transform .1s 1s;
+}
+nav li.has-child.active > a i{
+
+    transform: scale(0);
+} 
+
+nav .sub-menu{
+    position: absolute;
+    background-color: var(--dark-color);
+    left: -100%;
+    top: -110px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45px;
+    z-index: 10;
+    clip-path: inset(0 250px 0 round 100px);
+}
+
+nav ul li.has-child.active > .sub-menu{
+    clip-path: inset(0 0 0 0);
+    transition: clip-path .3s;
+    transition-delay: 1s;
+}
+
+nav .sub-menu li a {
+    color: var(--white-color);
+    font-size: 25px;
+    border-radius: 50%;
+    margin: 0;
+    clip-path: inset(10px round 20px);
+    transition: background-color .3s, color .3s, clip-path .3s;
+}
+
+nav .sub-menu li a:hover {
+    background-color: var(--primary-color);
+}
