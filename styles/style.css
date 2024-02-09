@@ -26,7 +26,7 @@ body{
     min-height: 100vh;
     width: 100%;
     margin: 0%;
-    background-image: url("../images/Animales/Palma_W_Boot_0151_20121230_Formaat\ wijzigen.jpg");
+    background-image: url("../images/Animales/Cabeza\ Calderon.jpg");
     background-position: bottom -90px right -400px;
     background-repeat: repeat; /* Do not repeat the image */
     /*background-size: cover;  Resize the background image to cover the entire container */
@@ -45,7 +45,6 @@ body{
 
 @media only screen and (min-width: 769px) {
 
-    /* CSS for screens above or equal to 600px wide NO ME FUNCIONA BIEN va al reves??????? */
     body{
         visibility: hidden;
         background: none;
