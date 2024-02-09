@@ -26,7 +26,7 @@ body{
     min-height: 100vh;
     width: 100%;
     margin: 0%;
-    background-image: url("../images/Animales/Cabeza\ Calderon.jpg");
+    background-image: url("../images/Animales/cabeza\ calderon.jpg");
     background-position: bottom -90px right -400px;
     background-repeat: repeat; /* Do not repeat the image */
     /*background-size: cover;  Resize the background image to cover the entire container */
