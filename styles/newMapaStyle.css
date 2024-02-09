@@ -17,8 +17,8 @@ body{
     width: 100%;
     height: 100vh;
     margin: 0%;
-    margin-bottom: 150px;
     background-color: rgb(192, 231, 255);
+    overflow: hidden;
 }
 
 .pagina{
@@ -27,102 +27,118 @@ body{
     height: 100%;
     background-image: url('../images/Mapa/mapaOK_page-0001.jpg');
     background-repeat: no-repeat;
-    background-position: center;
     background-size: 100%;
 
 }
 
 .return{
-    height: 80px;
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    
     z-index: 10;
-    position: fixed;
-    left: 145px;
 }
 
-/*En el movil el grid de los puntos esta demasiado arriba al igual que el texto*/
-
+.return img{
+    height: 80px;
+    z-index: 10;
+    border-radius: 20px;
+}
 
 .pings{
     position: relative;
-    height: 210px;
-    width: 105px;
-    z-index: 10;
-    left: 25px;
-    top: 460px;
+
+    height: 220px;
+    width: 150px;
+
+    left: 15px;
+    top: 325px;
+    /* left: 2%;
+    top: 41%; */
+
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: row;
-
+    z-index: 10;
 }
 
 .pings a{
+    width: 48%;
+    height: 24%;
+    margin: 1px;
     text-decoration: none;
-    color: #010924;
-    width: 50px;
-    height: 50px;
-    font-size: 40px;
-}
-
-.text{
-    height: 70px;
-    width: 100px;
-    position: relative;
-    left: 300px;
-    top: 390px;
-    rotate: -5deg;
     
 }
-.text p{
-    font-size: 9px;
-    padding-left: 10px;
+.pings a p{
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 50%;
+    background-color: #2366e0;
+    text-decoration: none;
+    color: #ffffff;
+
+
 }
 
-/*
-
 .cueva-bonita{
-    position: fixed;
-    left: 65px;
-    top: 900px;
+    background-image: url("../images/cueba\ bonita\ dentro.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .poris-candelaria{
-    position: fixed;
-    left: 120px;
-    top: 780px;
+    background-image: url("../images/Poriscandelaria/PorisCandelariaBuena.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
-
 .playa-veta{
-    position: fixed;
-    left: 100px;
-    top: 730px;
+    background-image: url("../images/PlayaVeta/PlayaVetaBueno.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%
 }
-
 .pozo-tinizara{
-    position: fixed;
-    left: 80px;
-    top: 670px;
+    background-image: url("../images/PozoTinizara/pozo\ tinizara\ \ desde\ mar.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%
 }
-
 .cueva-colorada{
-    position: fixed;
-    left: 50px;
-    top: 619px;
+    background-image: url("../images/CuevaColorada/CuevaColoradaBuena.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%
 }
-
 .poris-puntagorda{
-    position: fixed;
-    left: 10px;
-    top: 530px;
+    background-image: url("../images/PorisPuntagorda/Pors_de_Puntagorda.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%
+}
+.volcan{
+    background-image: url("../images/volcan/wreareg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%
 }
 
-.volcan{
-    position: fixed;
-    left: 250px;
-    top: 1080px;
+.text{
+    background-color: rgba(255, 0, 0, 0.432);
+    height: 100px;
+    width: 120px;
+    position: relative;
+    right: -290px;
+    top: 210px;
+/*     rotate: -5deg; */
+    
 }
-*/
+.text p{
+    font-size: 11px;
+    padding-left: 10px;
+}
+
 ul{
     list-style: none;
 }
@@ -138,7 +154,7 @@ ul{
 
     position: fixed;
     bottom: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
 
     font-family: 'Rubick', sans-serif;

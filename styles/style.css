@@ -67,7 +67,7 @@ body{
 .return img{
     height: 80px;
     z-index: 10;
-    background-color: rgba(255, 255, 255, 0.541);
+    background-color: rgba(255, 255, 255, 0.61);
     border-radius: 20px;
 }
 
@@ -117,7 +117,7 @@ ul{
 
     position: fixed;
     bottom: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
 
     font-family: 'Rubick', sans-serif;

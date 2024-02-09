@@ -1,38 +1,83 @@
 <!DOCTYPE html> 
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>Mapa</title>
-        <link rel="stylesheet" href="../styles/styleMapa.css">
+      <meta charset="UTF-8">
+      <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+      <title>Mapa</title>
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+      <link rel="stylesheet" href="../styles/styleMapa.css">
     </head>
-    <body class="mapa">
-
-        <div class="aboutUs">
-            <a href="../index.html">
-                <div>
-                    <img src="../images/icons/arrow-return-left.svg" alt="return index" class="return">   
-                </div>
-            </a>
-        </div>
-
-        <div class = "container flex">
-
+    <body>
+        <section class="pagina">
+        
+      
+        
+        <picture class="imagenypings">
+            <!-- <div class="return">
+                <a href="../index.html">
+                    <img src="../images/logoFancyFanctasy.png" alt="return index">   
+                </a>
+            </div> -->
+            <img src="../images/Mapa/mapaOK_page-0001.jpg" alt="mapa" class="mapa">
+            <div class="pings">
             
+            <a href="cuevaBonita.html" class="cueva-bonita"></a>
+            <a href="porisCandelaria.html" class="poris-candelaria"></i></a>
+            <a href="playaVeta.html" class="playa-veta"></a>
+            <a href="pozoTinizara.html" class="pozo-tinizara"></a>
+            <a href="cuevaColorada.html" class="cueva-colorada"></a>
+            <a href="porisPuntagorda.html" class="poris-puntagorda"></a>
+            <a href="volcanTajogaite.html" class="volcan" style="width: 80px;"></a>
+              
+          </div>
+        </picture>
+          
+          <!-- 
+          <div class="text">
+            <p>- Haz click en la imagen para mas informacion sobre ese punto. <br>- Haz click en el logo para volver al menu de inicio.</p>
+          </div> -->
 
-            <div class="container grid">
-
-                <div class="boton bonita"><a href="cuevaBonita.html" ><img src="../images/Mapa/pingnegro_preview_rev_1.png" alt="pin bonita"></a></div>
-                <div class="boton candelaria"><a href="porisCandelaria.html" ><img src="../images/Mapa/pingnegro_preview_rev_1.png" alt="pin candelaria"></a></div>
-                <div class="boton veta"><a href="playaVeta.html" ><img src="../images/Mapa/pingnegro_preview_rev_1.png" alt="pin veta"></a></div>
-                <div class="boton tinizara"><a href="pozoTinizara.html" ><img src="../images/Mapa/pingnegro_preview_rev_1.png" alt="pin tinizara"></a></div>
-                <div class="boton colorada"><a href="cuevaColorada.html" ><img src="../images/Mapa/pingnegro_preview_rev_1.png" alt="pin colorada"></a></div>
-                <div class="boton puntagorda"><a href="porisPuntagorda.html" ><img src="../images/Mapa/pingnegro_preview_rev_1.png" alt="pin puntagorda"></a></div>
-                <div class="boton volcan"><a href="volcanTajogaite.html" ><img src="../images/Mapa/pingnegro_preview_rev_1.png" alt="pin volcan"></a></div> 
-                
-            </div>
-
-        </div>
+          <div class="naveg">
+            <nav>
+              <ul>
+                <li><a href="../pages/mapaNew.html"><i class="ri-compass-3-line"></i></a></li> 
+                <li><a href="barcos.html"><i class="ri-ship-line"></i></a></li> 
+                <li class="has-child">
+                  <a href="#"><i class="ri-add-line"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="porisCandelaria.html"><i class="ri-arrow-drop-left-line"></i></a></li>
+                    <li><a href="https://www.instagram.com/fancy2fantasy/"><i class="ri-instagram-line"></i></a></li>
+                    <li><a href="volcanTajogaite.html"><i class="ri-arrow-drop-right-line"></i></a></li>
+                    
+                  </ul>
+                </li> 
+                <li><a href="aboutUs.html"><i class="ri-user-search-line"></i></a></li> 
+                <li ><a href="animales.html"><i class="ri-mickey-line"></i></a></li> 
+                <li class="last"></li>
+              </ul>
+            </nav>
+          </div>
+      </section>
+        
 
     </body>
+
+    <script>
+        const trigger = document.querySelectorAll('nav li');
+        
+        trigger.forEach((menu) => menu.addEventListener('click', toggle));
+        function toggle(){
+          trigger.forEach((item) => item != this ? item.classList.remove('active') : null);
+          if(this.classList != 'active'){
+            this.classList.toggle('active');
+            
+          }
+        }
+    
+        const mas = document.querySelectorAll("has-child");
+        const cerrar = document.querySelectorAll("has-child a")
+    
+    
+      </script>
 
 </html>
