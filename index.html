@@ -23,11 +23,12 @@
                 <a href="pages/aboutUs.html"><i class="ri-user-search-line"></i>Tripulacion</a>
                 <a href="https://www.instagram.com/fancy2fantasy/"><i class="ri-instagram-line"></i>Instagram</a>
                 <a href="https://g.page/r/CcV0mEq232u8EB0/review"><i class="ri-star-line"></i>Reseñas</a>
-                
-                
-                
-
             </div>
+            <div class="switch">
+                <i class="ri-arrow-up-s-line"></i>
+                <i class="ri-arrow-down-s-line" style="visibility: hidden;"></i>
+            </div>
+            <!--
             <div class="naveg">
                 <nav>
                     <ul>
@@ -47,21 +48,26 @@
                     </ul>
                 </nav>
             </div>
-            
+            -->
         </section>
         
     </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
-        const trigger = document.querySelectorAll('nav li');
-    
-        trigger.forEach((menu) => menu.addEventListener('click', toggle));
-        function toggle(){
-        trigger.forEach((item) => item != this ? item.classList.remove('active') : null);
-            if(this.classList != 'active'){
-                this.classList.toggle('active');
-            
-            }
-        }
+
+        $(".ri-arrow-up-s-line").click(function () {
+            $(".contenido").slideUp();
+            $(".ri-arrow-up-s-line").css("visibility", "hidden");
+            $(".ri-arrow-down-s-line").css("visibility", "visible");
+        });
+        $(".ri-arrow-down-s-line").click(function () {
+            $(".contenido").slideDown();
+            $(".ri-arrow-down-s-line").css("visibility", "hidden");
+            $(".ri-arrow-up-s-line").css("visibility", "visible");
+        });
+
+
     </script>
 
 </html>
