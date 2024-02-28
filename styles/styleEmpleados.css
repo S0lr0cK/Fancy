@@ -27,24 +27,24 @@ body{
 }
 
 .return{
-    
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 5px;
-
+    margin-top: 5px;
+    
     z-index: 10;
 }
 
 .return img{
-    height: 150px;
+    height: 80px;
     z-index: 10;
+    background-color: rgba(255, 255, 255, 0.144);
+    border-radius: 20px;
 }
 
 h1{
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .grupo{
@@ -58,8 +58,8 @@ h1{
 
 .carta{
     margin-top: 25px;
-    width: 400px;
-    height: 600px;
+    width: 200px;
+    height: 260px;
 }
 
 .carta-inner{
@@ -82,32 +82,109 @@ h1{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 0px 3px 18px 3px rgba(0, 45, 104, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 3px 9px 3px rgba(0, 45, 104, 0.8);
 }
 
-.cara{
-    background-image: url('../images/empleados/talki.jpeg');
+#Pepon{
+    background-image: url('../images/empleados/pepon.jpeg');
+    
+    /*
     background-position: center;
     background-position-x: -120px;
     background-position-y: -280px;
-    
     background-size:auto;
-    background-repeat: no-repeat;
-
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    */
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+}
+#David{
+    background-image: url('');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+}
+#Carlos{
+    background-image: url('../images/empleados/carlos.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+}
+#Juanka{
+    background-image: url('');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+}
+#Juan{
+    background-image: url('');
+    background-size: cover;
+    background-position-x: -26px;
+    background-repeat: no-repeat;
+
+    
+}
+#Lucia{
+    background-image: url('../images/empleados/luciaa.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+}
+#Ivan{
+    background-image: url('');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+}
+#Oscar{
+    background-image: url('../images/empleados/oscar2.jpeg');
+    background-size: cover;
+    background-position-y: -40px;
+    background-repeat: no-repeat;
+
+    
+}
+#Fabrizio{
+    background-image: url('../images/empleados/fabrizio.jpeg');
+    background-size: cover;
+    background-position-y: -30px;
+    background-repeat: no-repeat;
+
+    
+}
+#Mery{
+    background-image: url('');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+}
+#Talki{
+    background-image: url('../images/empleados/talki.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
 }
 
 .cara h3{
     width: 100%;
-    margin-bottom: 60px;
-    font-size: 40px;
-    background-color: rgb(0, 0, 0, 0.3);
-    color: var(--light-color);
+    margin-bottom: 5px;
+    font-size: 30px;
+    color: rgb(245, 245, 245);
     text-align: center;
-    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 2px rgba(0, 119, 255, 0.479);
     
 }
 
@@ -141,21 +218,10 @@ h1{
     background-image: linear-gradient(to bottom left, var(--primary-color) 10%, var(--secundario) 110%);
 }
 
-.encabezado img{
-    display: block;
-    width: 158px;
-    height: 158px;
-    border-radius: 50%;
-    margin: 0 auto 30px;
-    border: 5px solid #c1fcf7;
-    object-fit: cover;
-
-}
-
 .encabezado h2{
     color: #FFF;
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
 
 }
 
@@ -164,7 +230,7 @@ h1{
 }
 
 .cuerpo p{
-    font-size: 30px;
+    font-size: 15px;
 }
 
 ul{
@@ -174,7 +240,7 @@ ul{
 .naveg{
     z-index: 100;
     width: 100%;
-    height: 200px;
+    height: 80px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -182,7 +248,7 @@ ul{
 
     position: fixed;
     bottom: 0;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 
 
     font-family: 'Rubick', sans-serif;
@@ -198,14 +264,14 @@ nav{
     background-color: var(--primary-color);
 
     position: relative;
-    width: 700px;
-    height: 170px;
+    width: 300px;
+    height: 100%;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border-radius: 65px;
+    border-radius: 33px;
 }
 
 nav ul{
@@ -216,7 +282,7 @@ nav ul{
 nav :where(li, li a){
     position: relative;
 }
-/**/
+
 
 nav li a {
     
@@ -224,15 +290,15 @@ nav li a {
     color: inherit;
     -webkit-tap-highlight-color: transparent;
 
-    width: 120px;
-    height: 120px;
+    width: 50px;
+    height: 50px;
     margin: 0 ;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    font-size: 50px;
+    font-size: 25px;
     z-index: 10;
     
 }
@@ -245,7 +311,7 @@ nav ul li.active > a {
     background-color: var(--primary-color);
     color: var(--white-color);
     border-radius: 50%;
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     text-shadow: 3px 5px 15px;
 }
 
@@ -274,12 +340,12 @@ nav li.has-child.active > a{
 
 @keyframes jump {
     0% {transform: translateY(-40px);}
-    20% {transform: translateY(-100px);}
-    40% {transform: translateY(-100px);}
-    60% {transform: translateY(-180px);}
-    80% {transform: translateY(-200px) scale(1.4);}
-    90% {transform: translateY(-180px) scale(1.4); background-color: var(--primary-color);}
-    100% {transform: translateY(-160px) scale(1); background-color: var(--dark-color);}
+    20% {transform: translateY(-90px);}
+    40% {transform: translateY(-90px);}
+    60% {transform: translateY(-120px);}
+    80% {transform: translateY(-150px) ;}
+    90% {transform: translateY(-130px) ; background-color: var(--primary-color);}
+    100% {transform: translateY(-110px) ; background-color: var(--dark-color);}
 }
 
 nav li.active > a > i{
@@ -295,10 +361,10 @@ nav .sub-menu{
     position: absolute;
     background-color: var(--dark-color);
     left: -100%;
-    top: -160px;
+    top: -110px;
     align-items: center;
     justify-content: center;
-    border-radius: 55px;
+    border-radius: 45px;
     z-index: 10;
     clip-path: inset(0 250px 0 round 100px);
 }
@@ -311,7 +377,7 @@ nav ul li.has-child.active > .sub-menu{
 
 nav .sub-menu li a {
     color: var(--white-color);
-    font-size: 45px;
+    font-size: 25px;
     border-radius: 50%;
     margin: 0;
     clip-path: inset(10px round 20px);

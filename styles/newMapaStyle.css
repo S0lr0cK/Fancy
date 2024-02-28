@@ -46,6 +46,26 @@ body{
     border-radius: 20px;
 }
 
+.error{
+    visibility: hidden;
+    text-align: center;
+    position: fixed;
+    left: 28%;
+    top: 40%;
+}
+
+@media only screen and (min-width: 700px) {
+
+    body{
+        visibility: hidden;
+        background: none;
+    }
+    .error{
+        visibility: visible;
+    }
+}
+
+
 .pings{
     position: relative;
 

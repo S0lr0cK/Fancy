@@ -37,7 +37,23 @@ body{
     top: 40%;
 }
 
-@media only screen and (min-width: 769px) {
+.return{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    
+    z-index: 10;
+}
+
+.return img{
+    height: 80px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.144);
+    border-radius: 20px;
+}
+
+@media only screen and (min-width: 700px) {
 
     body{
         visibility: hidden;
@@ -147,35 +163,6 @@ body{
     height: 100%;
     width: 100%;
     font-size: 20px;
-}
-
-@media only screen and (min-width: 769px) {
-
-    /* CSS for screens above or equal to 600px wide NO ME FUNCIONA BIEN va al reves??????? */
-    body{
-        visibility: hidden;
-        background: none;
-    }
-    .error{
-        visibility: visible;
-    }
-}
-
-.return{
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5px;
-    margin-bottom: 2.5px;
-
-    z-index: 10;
-}
-
-.return img{
-    height: 80px;
-    z-index: 10;
 }
 
 ul{

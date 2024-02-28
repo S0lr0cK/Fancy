@@ -10,9 +10,6 @@
     --secundario: #94e6ff;
 }
 
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -29,37 +26,145 @@ body{
     background: linear-gradient(to top, rgb(210, 244, 255), rgb(70, 172, 255));
 }
 
-.error{
-    visibility: hidden;
-    text-align: center;
-}
-
-@media only screen and (min-width: 769px) {
-
-    /* CSS for screens above or equal to 600px wide NO ME FUNCIONA BIEN va al reves??????? */
-    body{
-        visibility: hidden;
-        background: none;
-    }
-    .error{
-        visibility: visible;
-    }
-}
-
 .return{
-    width: 100%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5px;
-    margin-bottom: 2.5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 
     z-index: 10;
 }
 
 .return img{
-    height: 80px;
+    height: 150px;
     z-index: 10;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.grupo{
+    width: 100%;
+    margin-bottom: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.carta{
+    margin-top: 25px;
+    width: 400px;
+    height: 600px;
+}
+
+.carta-inner{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.carta-inner.girada{
+    transform: rotateY(180deg);
+}
+
+.lado{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 45, 104, 0.8);
+}
+
+.cara{
+    background-image: url('../images/empleados/talki.jpeg');
+    background-position: center;
+    background-position-x: -120px;
+    background-position-y: -280px;
+    
+    background-size:auto;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.cara h3{
+    width: 100%;
+    margin-bottom: 60px;
+    font-size: 40px;
+    background-color: rgb(0, 0, 0, 0.3);
+    color: var(--light-color);
+    text-align: center;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.3);
+    
+}
+
+.cruz{
+    transform: rotateY(180deg);
+    background-color: #ffffff;
+}
+
+.contenido{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+.encabezado{
+    position: relative;
+    padding: 30px 30px 40px;
+}
+
+.encabezado:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 0 0 50% 0;
+    background-image: linear-gradient(to bottom left, var(--primary-color) 10%, var(--secundario) 110%);
+}
+
+.encabezado img{
+    display: block;
+    width: 158px;
+    height: 158px;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    border: 5px solid #c1fcf7;
+    object-fit: cover;
+
+}
+
+.encabezado h2{
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.cuerpo{
+    text-align: center;
+}
+
+.cuerpo p{
+    font-size: 30px;
 }
 
 ul{
@@ -111,7 +216,7 @@ nav ul{
 nav :where(li, li a){
     position: relative;
 }
-/**/
+
 
 nav li a {
     

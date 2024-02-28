@@ -28,22 +28,39 @@ body{
     /*overflow: hidden;*/
 }
 
+.error{
+    visibility: hidden;
+    text-align: center;
+    position: fixed;
+    left: 28%;
+    top: 40%;
+}
+
+@media only screen and (min-width: 700px) {
+
+    body{
+        visibility: hidden;
+        background: none;
+    }
+    .error{
+        visibility: visible;
+    }
+}
+
 .return{
-    
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 5px;
+    
     z-index: 10;
 }
 
 .return img{
-    height: 150px;
+    height: 80px;
     z-index: 10;
-    border-radius: 25px;
-   /* box-shadow: 0px 3px 18px 3px rgba(0, 45, 104, 0.2);*/
-    
+    background-color: rgba(255, 255, 255, 0.144);
+    border-radius: 20px;
 }
 /*
 .return img:hover{
@@ -52,11 +69,11 @@ body{
 */
 h1{
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
 }
 h2{
     text-align: center;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .grupo{
@@ -147,24 +164,41 @@ h2{
     overflow: hidden;
 }
 .animal{
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     border-radius: 20px;
     display: flex;
     background-color: rgba(52, 160, 255, 0.5);
     z-index: 1;
-    margin: 50px;
+    margin: 30px;
     /* box-shadow: 0px 3px 18px 3px rgba(0, 45, 104, 0.8); no se cual es mejor de los dos tipos de sombra, por ahora pondre todas las sombras de la pagina iguales
     box-shadow: 10px 10px 10px 10px rgb(7, 92, 204, 0.3);*/
     box-shadow: 0px 3px 18px 3px rgba(0, 45, 104, 0.6);
 }
 
 #dmular{
-    background-image: url("../images/Animales/Copia\ \(2\)\ de\ DSC06502.JPG");
+    background-image: url("../images/Animales/mularSaltando.jpg");
+    background-position-x: -125px;
     background-size: cover;
 }
 #dmoteado{
-    background-image: url("../images/Animales/DSC06230.JPG");
+    background-image: url("../images/Animales/moteado2.JPG");
+    background-position-x: -30px;
+    background-size: cover;
+}
+#drugoso{
+    background-image: url("../images/Animales/rugoso.JPG");
+    background-position-x: -50px;
+    background-size: cover;
+}
+#dcomun{
+    background-image: url("../images/Animales/comunSaltando.jpg");
+    background-position-x: 0px;
+    background-size: cover;
+}
+#dlistado{
+    background-image: url("../images/Animales/listado1.jpg");
+    background-position-x: -70px;
     background-size: cover;
 }
 
@@ -196,7 +230,7 @@ h2{
 }
 
 .animal .encabezado h3{
-    font-size: 40px;
+    font-size: 30px;
     margin-right: 200px;
 }
 
@@ -288,28 +322,29 @@ h2{
     justify-content: center;
     flex-flow: column;
     width: 100%;
-    height: 100vh;
+    height: 0;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    /*background-color: rgba(0,0,0,0.5);*/
     z-index: 200;
     visibility: hidden;
 }
 .explicacion .ri-close-line{
-    height: 200px;
-    width: 200px;
+    height: 50px;
+    width: 50px;
     color: #ffffff;
     cursor: pointer;
     text-align: center;
-    font-size: 100px;
+    font-size: 50px;
 }
 
 .fondo{
+    
     overflow-y: auto;
-    height: 82svh;
-    width: 865px;
+    height: 90%;
+    width: 98%;
     background-color: #000000e1;
     display: flex;
     flex-flow: column;
@@ -318,41 +353,35 @@ h2{
     
 }
 .fondo h2{
-    
-    width: 865px;
     color: #ffffff;
-    text-align: center;
-    font-size: 60px;
+    font-size: 20px;
 }
 .fondo img{
     width: 95%;
-    border-radius: 20px;
+    border-radius: 15px;
     
 }
 .fondo h3{
     text-align: center;
-    width: 865px;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 18px;
 }
 .fondo h4{
     text-align: center;
-    width: 865px;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 16px;
 }
 .fondo p{
-    width: 800px;
     color: #ffffff;
-    font-size: 30px;
-    margin: 35px;
+    font-size: 14px;
+    margin: 25px;
     text-align: justify;
 }
 .fondo blockquote{
-    width: 800px;
     color: #ffffff;
     text-align: center;
-    font-size: 30px;
+    font-size: 12px;
+    margin: 10px;
 }
 .links{
     display: flex;
@@ -362,15 +391,15 @@ h2{
 
 .insta{
     text-decoration: none;
-    font-size: 100px;
+    font-size: 50px;
     color: #ffffff;
-    margin: 50px;
+    margin: 25px;
 }
 .libro{
     text-decoration: none;
-    font-size: 100px;
+    font-size: 50px;
     color: #ffffff;
-    margin: 50px;
+    margin: 25px;
 }
 
 #text{
@@ -390,7 +419,7 @@ ul{
 .naveg{
     z-index: 100;
     width: 100%;
-    height: 200px;
+    height: 80px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -398,7 +427,7 @@ ul{
 
     position: fixed;
     bottom: 0;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 
 
     font-family: 'Rubick', sans-serif;
@@ -414,14 +443,14 @@ nav{
     background-color: var(--primary-color);
 
     position: relative;
-    width: 700px;
-    height: 170px;
+    width: 300px;
+    height: 100%;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border-radius: 65px;
+    border-radius: 33px;
 }
 
 nav ul{
@@ -432,7 +461,7 @@ nav ul{
 nav :where(li, li a){
     position: relative;
 }
-/**/
+
 
 nav li a {
     
@@ -440,15 +469,15 @@ nav li a {
     color: inherit;
     -webkit-tap-highlight-color: transparent;
 
-    width: 120px;
-    height: 120px;
+    width: 50px;
+    height: 50px;
     margin: 0 ;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    font-size: 50px;
+    font-size: 25px;
     z-index: 10;
     
 }
@@ -461,7 +490,7 @@ nav ul li.active > a {
     background-color: var(--primary-color);
     color: var(--white-color);
     border-radius: 50%;
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     text-shadow: 3px 5px 15px;
 }
 
@@ -490,12 +519,12 @@ nav li.has-child.active > a{
 
 @keyframes jump {
     0% {transform: translateY(-40px);}
-    20% {transform: translateY(-100px);}
-    40% {transform: translateY(-100px);}
-    60% {transform: translateY(-180px);}
-    80% {transform: translateY(-200px) scale(1.4);}
-    90% {transform: translateY(-180px) scale(1.4); background-color: var(--primary-color);}
-    100% {transform: translateY(-160px) scale(1); background-color: var(--dark-color);}
+    20% {transform: translateY(-90px);}
+    40% {transform: translateY(-90px);}
+    60% {transform: translateY(-120px);}
+    80% {transform: translateY(-150px) ;}
+    90% {transform: translateY(-130px) ; background-color: var(--primary-color);}
+    100% {transform: translateY(-110px) ; background-color: var(--dark-color);}
 }
 
 nav li.active > a > i{
@@ -511,10 +540,10 @@ nav .sub-menu{
     position: absolute;
     background-color: var(--dark-color);
     left: -100%;
-    top: -160px;
+    top: -110px;
     align-items: center;
     justify-content: center;
-    border-radius: 55px;
+    border-radius: 45px;
     z-index: 10;
     clip-path: inset(0 250px 0 round 100px);
 }
@@ -527,7 +556,7 @@ nav ul li.has-child.active > .sub-menu{
 
 nav .sub-menu li a {
     color: var(--white-color);
-    font-size: 45px;
+    font-size: 25px;
     border-radius: 50%;
     margin: 0;
     clip-path: inset(10px round 20px);
