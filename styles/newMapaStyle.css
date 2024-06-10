@@ -25,7 +25,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('../images/Mapa/mapaOK_page-0001.jpg');
+    background-image: url('../images/mapaOK_page-0001.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 
@@ -107,39 +107,39 @@ body{
 
 }
 
-.cueva-bonita{
-    background-image: url("../images/CuevaBonita/cuebabonitadentro.jpeg");
+#cueva-bonita{
+    background-image: url("../images/cueba\ bonita\ dentro.jpeg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-.poris-candelaria{
-    background-image: url("../images/Poriscandelaria/PorisCandelariaBuena.jpg");
+#poris-candelaria{
+    background-image: url("../images/PorisCandelariaBuena.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
-.playa-veta{
-    background-image: url("../images/PlayaVeta/PlayaVetaBueno.jpg");
+#playa-veta{
+    background-image: url("../images/PlayaVetaBueno.jpg");
     background-repeat: no-repeat;
     background-size: 100%
 }
-.pozo-tinizara{
-    background-image: url("../images/PozoTinizara/pozo\ tinizara\ \ desde\ mar.jpg");
+#pozo-tinizara{
+    background-image: url("../images/pozo\ tinizara\ \ desde\ mar.jpg");
     background-repeat: no-repeat;
     background-size: 100%
 }
-.cueva-colorada{
-    background-image: url("../images/CuevaColorada/CuevaColoradaBuena.jpg");
+#cueva-colorada{
+    background-image: url("../images/CuevaColoradaBuena.jpg");
     background-repeat: no-repeat;
     background-size: 100%
 }
-.poris-puntagorda{
-    background-image: url("../images/PorisPuntagorda/Pors_de_Puntagorda.jpg");
+#poris-puntagorda{
+    background-image: url("../images/Pors_de_Puntagorda.jpg");
     background-repeat: no-repeat;
     background-size: 100%
 }
-.volcan{
-    background-image: url("../images/volcan/wreareg.jpg");
+#volcan{
+    background-image: url("../images/wreareg.jpg");
     background-repeat: no-repeat;
     background-size: 100%
 }
@@ -157,6 +157,93 @@ body{
 .text p{
     font-size: 11px;
     padding-left: 10px;
+}
+
+.explicacion{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    width: 100%;
+    height: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*background-color: rgba(0,0,0,0.5);*/
+    z-index: 200;
+    visibility: hidden;
+}
+.explicacion .ri-close-line{
+    height: 50px;
+    width: 50px;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    font-size: 50px;
+}
+
+.fondo{
+    
+    overflow-y: auto;
+    height: 90%;
+    width: 98%;
+    background-color: #000000e1;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border-radius: 20px;
+    
+}
+.fondo h2{
+    color: #ffffff;
+    font-size: 20px;
+}
+.fondo img{
+    width: 95%;
+    border-radius: 15px;
+    
+}
+.fondo h3{
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+.fondo h4{
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+}
+.fondo p{
+    color: #ffffff;
+    font-size: 14px;
+    margin: 25px;
+    text-align: justify;
+}
+.fondo blockquote{
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    margin: 10px;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.insta{
+    text-decoration: none;
+    font-size: 50px;
+    color: #ffffff;
+    margin: 25px;
+}
+.libro{
+    text-decoration: none;
+    font-size: 50px;
+    color: #ffffff;
+    margin: 25px;
 }
 
 ul{
