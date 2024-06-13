@@ -25,7 +25,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('../images/mapaOK_page-0001.jpg');
+    background-image: url('../images/Mapa/mapaOK_page-0001.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 
@@ -108,38 +108,38 @@ body{
 }
 
 #cueva-bonita{
-    background-image: url("../images/cueba\ bonita\ dentro.jpeg");
+    background-image: url("../images/CuevaBonita/Cueva\ Bonita\ atardecer.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
 #poris-candelaria{
-    background-image: url("../images/PorisCandelariaBuena.jpg");
+    background-image: url("../images/Poriscandelaria/PorisCandelariaBuena.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 #playa-veta{
-    background-image: url("../images/PlayaVetaBueno.jpg");
+    background-image: url("../images/PlayaVeta/PlayaVetaBueno.jpg");
     background-repeat: no-repeat;
     background-size: 100%
 }
 #pozo-tinizara{
-    background-image: url("../images/pozo\ tinizara\ \ desde\ mar.jpg");
+    background-image: url("../images/PozoTinizara/pozo\ tinizara\ \ desde\ mar.jpg");
     background-repeat: no-repeat;
     background-size: 100%
 }
 #cueva-colorada{
-    background-image: url("../images/CuevaColoradaBuena.jpg");
+    background-image: url("../images/CuevaColorada/CuevaColoradaBuena.jpg");
     background-repeat: no-repeat;
     background-size: 100%
 }
 #poris-puntagorda{
-    background-image: url("../images/Pors_de_Puntagorda.jpg");
+    background-image: url("../images/PorisPuntagorda/poris\ punta\ gorda.jpg");
     background-repeat: no-repeat;
     background-size: 100%
 }
 #volcan{
-    background-image: url("../images/wreareg.jpg");
+    background-image: url("../images/volcan/wreareg.jpg");
     background-repeat: no-repeat;
     background-size: 100%
 }
@@ -194,7 +194,21 @@ body{
     flex-flow: column;
     align-items: center;
     border-radius: 20px;
-    
+
+}
+.fondo h5{
+    color: #ffffff;
+    font-size: 20px;
+}
+.fondo a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #178ef0bb;
 }
 .fondo h2{
     color: #ffffff;
@@ -218,7 +232,7 @@ body{
 .fondo p{
     color: #ffffff;
     font-size: 14px;
-    margin: 25px;
+    margin: 20px;
     text-align: justify;
 }
 .fondo blockquote{
