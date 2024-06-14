@@ -139,6 +139,23 @@ h2{
     border-radius: 0 0 90% 0;
     background-image: linear-gradient(to bottom left, var(--color2), var(--color1));
 }
+.velero h3{
+    font-size: 15px;
+}
+.velero .encabezado:after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 50px;
+    width: 140px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 0 0 90% 0;
+    background-image: linear-gradient(to bottom left, var(--color2), var(--color1));
+}
 
 .barco .encabezado h3{
     font-size: 25px;
@@ -163,6 +180,12 @@ h2{
     background-image: url("../images/Barcos/FANTASY 2.avif");
     background-position-x: 0px;
     background-position-y: -180px;
+    background-size: cover;
+}
+#velero{
+    background-image: url("../images/Barcos/velero.jpeg");
+    background-position-x: 0px;
+    background-position-y: -145px;
     background-size: cover;
 }
 /*

@@ -40,6 +40,18 @@
                         <div class="ola tres"></div>
                     </div>-->
                 </div>
+                <div class="barco velero" id="velero">
+                    <div class="encabezado">
+                        <h3>ECO Fancy</h3>
+                    </div>
+                    <!--
+                    <img src="../images/Barcos/FANTASY 2.avif" alt="">
+                    <div class="olasgrupo">
+                        <div class="ola uno"></div>
+                        <div class="ola dos"></div>
+                        <div class="ola tres"></div>
+                    </div>-->
+                </div>
                 
             </div>
             <div class="explicacion fcy">
@@ -156,6 +168,63 @@
                 </div>
                 <i class="ri-close-line"></i>
             </div>
+            <div class="explicacion eco">
+                <div class="fondo">
+                    <h2>ECO Fancy:</h2>
+                    <img src="../images/Barcos/FANTASY 2.avif" alt="">
+                    <h3>Algo de historia:</h3>
+                    <h4>Un cómodo catamarán con vision submarina</h4>
+                    <p>
+                        Construido en el año #### este barco esta hecho especialmente para las aguas de la palma. 
+                        Con las dimensiones adecuadas para entrar en la Cueva Bonita, pudiendo asi enseñar uno 
+                        de los puntos mas llamativos y curiosos de la isla, a la vez que una altura suficiente para 
+                        facilitar el avistamiento de cetaceos. 
+                        Ademas es un barco centrado en el avistamiento de cetaceos ya que posee dos grandes 
+                        ventanas submarinas para poder disfrutar de una vision increible de la fauna marina, 
+                        ya sean peces, delfines, ballenas o tortugas tendras la opcion de verlos de una forma nueva y segura.
+                        A bordo encontrarás servicio de bar, w.c., ducha de agua dulce y espacio abierto para tomar el 
+                        sol o permanecer a la sombra.
+                    </p>
+                    <h3>Tour:</h3>
+                    <p>
+                        Este es un tour, mas relajado y familiar, dedicado a la busqueda de cetaceos, aunque 
+                        hacemos algunas paradas en la costa, como <a href="cuevaBonita.html">La Cueva Bonita</a>, 
+                        <a href="porisCandelaria.html">Poris de Candelaria</a>, <a href="playaVeta.html">La Playa de la Veta</a>,
+                        y los nuevos delta lavicos del reciente <a href="volcanTajogaite.html">Volcan de Tajogaite</a>, 
+                        aunque no son paradas muy largas ya que nuestro objetivo en esta excursion es encontrar animalitos 
+                        marinos para vuestro disfrute. 
+                        La excursion es de 2h30min - 3h dependiendo de la posicion de los cetaceos, estado del tiempo etc. y 
+                        las bebidas no alcoholicas estan incluidas durante toda la excursion. 
+                        tiene tres partes la proa en la que puedes tomar el sol comodamente y estar mas cera de los 
+                        animales marinos al encontrarlos, la popa cuenta con unas mesas muy comodas por si vienes en familia o
+                        quieres tomarte algo tranquilo y por ultimo la cubierta superior, hay que subir unas escaleras y 
+                        te encuentras con unas vistas increibles. 
+                        Tambien si el tiempo lo permite y el capitan lo ve viable pasamos por unas rocas cerca de la superficie
+                        del agua para poder apreciar la fauna de peces que mas abunda en esta isla desde las visiones submarinas. 
+                        
+                    </p>
+                    <blockquote>
+                        <u>Importante:</u> Auqnue esta excursion sea especifica para la busqueda de delfines, ballenas, 
+                        animales marinos en general, y aunque tengamos la suerte de encontrarlos el 96% de las veces,
+                        no se puede asegurar el avistamiento ya que los animales estan en libertad 
+                        y en un mar inmenso. cada dia es una nueva experiencia con nuevas oportunidades. 
+                    </blockquote>
+                    <h3>Links:</h3>
+                    <div class="links">
+                        <a class="insta" href="https://www.instagram.com/fancy2fantasy/"><i class="ri-instagram-line"></i></a>
+                        
+                    </div>
+                    <p>
+                            
+                        En nuestro instagram podras ver un monton de fotos de este barco, para ver sus distintas partes asi como 
+                        las visiones submarinas y los distintos tipos de cetaceos y animales marinos que hemos tenido la suerte de 
+                        ver a lo largo de los años. 
+                        
+                    </p>
+                    
+                </div>
+                <i class="ri-close-line"></i>
+            </div>
             <div class="naveg">
                 <nav>
                     <ul>
@@ -218,6 +287,17 @@
              //Animation complete.
             });
           }  
+          if(ide == "velero"){
+            $(".eco").css('visibility', 'visible');
+            $("body").css('overflow', 'hidden');
+            $(".eco" ).animate({
+                left: "0",
+                height: "100vh",
+                width: '100%',
+            }, 1000, function() {
+             //Animation complete.
+            });
+          }
           
         });
 
