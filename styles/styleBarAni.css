@@ -76,14 +76,6 @@ h2{
     font-size: 25px;
 }
 
-.grupo{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: -200;
-}
 .grupoA{
     width: 100%;
     display: flex;
@@ -149,20 +141,6 @@ h2{
     overflow: scroll;
     scroll-snap-type: x mandatory;
 }
-
-.barco{
-    width: 850px;
-    height: 350px;
-    border-radius: 20px;
-    display: flex;
-    background-color: rgba(52, 160, 255, 0.5);
-    z-index: 10;
-    margin: 50px;
-    /* box-shadow: 0px 3px 18px 3px rgba(0, 45, 104, 0.8); este creo que quedaba mejor con la otra sombra
-    box-shadow: 10px 10px 10px 10px rgb(7, 92, 204, 0.3); este es mas una somra solo en una esquina*/
-    box-shadow: 0px 3px 18px 3px rgba(0, 45, 104, 0.4);
-    overflow: hidden;
-}
 .animal{
     width: 300px;
     height: 300px;
@@ -209,110 +187,9 @@ h2{
     
 }
 
-.barco .encabezado:after{
-    content: '';
-    display: block;
-    position: absolute;
-    height: 150px;
-    width: 600px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    border-radius: 0 0 90% 0;
-    background-image: linear-gradient(to bottom left, var(--primary-color) 10%, var(--secundario) 110%);
-}
-
-.barco .encabezado h3{
-    font-size: 50px;
-    margin-right: 150px;
-}
-
 .animal .encabezado h3{
     font-size: 30px;
     margin-right: 200px;
-}
-
-.barco img{
-    width: 500px;
-    height: auto;
-    border-radius: 50%;
-    z-index: 500;
-    box-shadow: 0px 0px 10px 10px rgb(7, 92, 204, 0.3);
-    margin: 10px;
-    
-}
-
-
-.olasgrupo{
-    width: 850px;
-    height: 350px;
-    position: fixed;
-    z-index: -80;
-    
-}
-
-.ola{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 350px;
-    background-image: url(../images/Barcos/wave.png);
-    background-size: 1000px 350px;
-    border-radius: 20px;
-}
-
-.olasgrupo .uno{
-    animation: animate 30s linear infinite;
-    z-index: -100;
-    opacity: 0.8;
-    animation-delay: 0s;
-    bottom: 0;
-
-}
-@keyframes animate {
-    0%{
-        background-position-x: 0;
-    }
-    100%{
-        background-position-x: -1000px;
-    }
-}
-
-.olasgrupo .dos{
-    animation: animate2 15s linear infinite;
-    z-index: -101;
-    opacity: 0.5;
-    animation-delay: 0s;
-    bottom: 0;
-
-}
-@keyframes animate2 {
-    0%{
-        background-position-x: 0;
-    }
-    100%{
-        background-position-x: 1000px;
-    }
-}
-
-.olasgrupo .tres{
-    animation: animate3 10s linear infinite;
-    z-index: -102;
-    opacity: 0.7;
-    animation-delay: 0s;
-    bottom: 0;
-
-}
-@keyframes animate3 {
-    0%{
-        background-position-x: 0;
-    }
-    100%{
-        background-position-x: -1000px;
-    }
 }
 
 .explicacion{

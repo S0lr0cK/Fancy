@@ -2,9 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
         <title>Barcos</title>
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="../styles/styleBarAni.css">
+        <link rel="stylesheet" href="../styles/styleBarcos.css">
     </head>
     <body>
         <section class="pagina">
@@ -19,23 +20,25 @@
                     <div class="encabezado">
                         <h3>Fancy</h3>
                     </div>
+                    <!--
                     <img src="../images/Barcos/Fancy.jpg" alt="">
                     <div class="olasgrupo">
                         <div class="ola uno"></div>
                         <div class="ola dos"></div>
                         <div class="ola tres"></div>
-                    </div>
+                    </div>-->
                 </div>
                 <div class="barco fantasy" id="fantasy">
                     <div class="encabezado">
                         <h3>Fantasy</h3>
                     </div>
+                    <!--
                     <img src="../images/Barcos/FANTASY 2.avif" alt="">
                     <div class="olasgrupo">
                         <div class="ola uno"></div>
                         <div class="ola dos"></div>
                         <div class="ola tres"></div>
-                    </div>
+                    </div>-->
                 </div>
                 
             </div>
@@ -149,6 +152,7 @@
                         ver a lo largo de los años. 
                         
                     </p>
+                    
                 </div>
                 <i class="ri-close-line"></i>
             </div>
@@ -174,6 +178,8 @@
         </section>
         
     </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
 
         const trigger = document.querySelectorAll('nav li');
@@ -186,6 +192,51 @@
             
             }
         }
+
+        $( ".barco" ).on( "click", function(event) {
+          var ide = $(this).attr('id');
+          if(ide == "fancy"){
+            $(".fcy").css('visibility', 'visible');
+            $("body").css('overflow', 'hidden');
+            $(".fcy" ).animate({
+                left: "0",
+                height: "100vh",
+                width: '100%',
+            }, 1000, function() {
+             //Animation complete.
+            });
+
+          } 
+          if(ide == "fantasy"){
+            $(".fsy").css('visibility', 'visible');
+            $("body").css('overflow', 'hidden');
+            $(".fcy" ).animate({
+                left: "0",
+                height: "100vh",
+                width: '100%',
+            }, 1000, function() {
+             //Animation complete.
+            });
+          }  
+          
+        });
+
+        $(".ri-close-line").on('click', function () {
+            
+            $(this).parent().animate({
+                left: "0",
+                height: "0",
+            }, 1000, function() {
+            // Animation complete.
+                $(this).parent().css('visibility', 'hidden');
+                $("body").css('overflow', 'scroll');
+                $(".pagina").css('visibility', 'visible');
+                $(this).css('visibility', 'hidden');
+            });
+            
+        });
+        
+        /*
 
         var fancy = document.querySelector(".fancy");
 
@@ -220,7 +271,7 @@
             
         });
 
-
+*/
 
     </script>
 
