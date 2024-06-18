@@ -179,6 +179,11 @@ h2{
     background-position-x: -70px;
     background-size: cover;
 }
+#ctropical{
+    background-image: url("../images/Animales/cabeza\ calderon.jpg");
+    background-position-x: -70px;
+    background-size: cover;
+}
 
 .encabezado{
     height: 80px;
