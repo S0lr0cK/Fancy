@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
+
 :root{
     --primary-color: #5a9bfd; 
     --dark-color: #2366e0;
@@ -47,6 +48,7 @@ h1{
     font-size: 30px;
 }
 
+
 .grupo{
     width: 100%;
     margin-bottom: 300px;
@@ -86,90 +88,73 @@ h1{
     box-shadow: 0px 3px 9px 3px rgba(0, 45, 104, 0.8);
 }
 
-#Pepon{
-    background-image: url('../images/empleados/pepon.jpeg');
+#Sargo{
+    background-image: url('../images/peces/sargo.jpg');
     
     /*
     background-position: center;
-    background-position-x: -120px;
-    background-position-y: -280px;
+    
     background-size:auto;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     */
-
+    background-position-x: -90px;
+    background-position-y: 0px;
     background-size: cover;
-    background-repeat: no-repeat;
+    
 
     
 }
-#David{
-    background-image: url('');
+#Boga{
+    background-image: url('../images/peces/boga.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position-x: -20px;
+    background-position-y: 0px;
 
     
 }
-#Carlos{
-    background-image: url('../images/empleados/carlos.jpeg');
+#Vieja{
+    background-image: url('../images/peces/vieja_colorada.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position-x: -35px;
+    background-position-y: 0px;
 
     
 }
-#Juanka{
-    background-image: url('');
+#Palometa{
+    background-image: url('../images/peces/palometa.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position-x: -125px;
+    background-position-y: 0px;
 
     
 }
-#Juan{
-    background-image: url('');
+#Galana{
+    background-image: url('../images/peces/galanas6.webp');
     background-size: cover;
-    background-position-x: -26px;
-    background-repeat: no-repeat;
+    background-position-x: -25px;
+    background-position-y: 0px;
 
     
 }
-#Lucia{
-    background-image: url('../images/empleados/luciaa.jpeg');
+#Chopa{
+    background-image: url('../images/peces/chopas4.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position-x: -20px;
+    background-position-y: 0px;
 
     
 }
-#Ivan{
-    background-image: url('');
+#Barracuda{
+    background-image: url('../images/peces/barracuda.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position-x: -20px;
+    background-position-y: 0px;
 
     
 }
-#Oscar{
-    background-image: url('../images/empleados/oscar2.jpeg');
-    background-size: cover;
-    background-position-y: -40px;
-    background-repeat: no-repeat;
 
-    
-}
-#Fabrizio{
-    background-image: url('../images/empleados/fabrizio.jpeg');
-    background-size: cover;
-    background-position-y: -30px;
-    background-repeat: no-repeat;
-
-    
-}
-#Mery{
-    background-image: url('');
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    
-}
 #Talki{
     background-image: url('../images/empleados/talki.jpeg');
     background-size: cover;
@@ -202,17 +187,17 @@ h1{
 
 .encabezado{
     position: relative;
-    padding: 30px 30px 40px;
+    padding: 10px 10px 20px;
 }
 
 .encabezado:after{
     content: '';
     display: block;
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0px;
     z-index: -1;
     border-radius: 0 0 50% 0;
     background-image: linear-gradient(to bottom left, var(--primary-color) 10%, var(--secundario) 110%);
@@ -221,7 +206,7 @@ h1{
 .encabezado h2{
     color: #FFF;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
 
 }
 
