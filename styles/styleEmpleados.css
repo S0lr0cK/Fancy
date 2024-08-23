@@ -48,14 +48,20 @@ h1{
     font-size: 30px;
 }
 
+.cruz .encabezado h2{
+    font-size: 15px;
+}
 
 .grupo{
     width: 100%;
-    margin-bottom: 300px;
+    margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 
+}
+.aves{
+    margin-bottom: 300px;
 }
 
 .carta{
@@ -153,6 +159,50 @@ h1{
     background-position-y: 0px;
 
     
+}
+#Boba{
+    background-image: url('../images/Animales/TotugaBoba.jpg');
+    background-size: cover;
+    background-position-x: -50px;
+    background-position-y: 0px;
+
+    
+}
+#Verde{
+    background-image: url('../images/Animales/tortugaVerde.jpg');
+    background-size: cover;
+    background-position-x: -45px;
+    background-position-y: 0px;
+
+    
+}
+#Carey{
+    background-image: url('../images/Animales/Tortuga-carey.webp');
+    background-size: cover;
+    background-position-x: -35px;
+    background-position-y: 0px;
+
+    
+}
+#Laúd{
+    background-image: url('../images/Animales/tortugaLaud.jpg');
+    background-size: cover;
+    background-position-x: -90px;
+    background-position-y: 0px;
+
+    
+}
+#Pardela{
+    background-image: url('../images/Animales/pardela\ cenicienta.webp');
+    background-size: cover;
+    background-position-x: -0px;
+    background-position-y: 0px;
+}
+#Gaviota{
+    background-image: url('../images/Animales/gaviota1.JPG');
+    background-size: cover;
+    background-position-x: -30px;
+    background-position-y: 0px;
 }
 
 #Talki{
