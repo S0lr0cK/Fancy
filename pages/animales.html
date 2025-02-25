@@ -1143,12 +1143,12 @@
 
         $(".ri-close-line").on('click', function () {
             
-            $(this).parent().parent().animate({
+            $(this).parent().parent().parent().animate({
                 left: "0",
                 height: "0",
             }, 1000, function() {
             // Animation complete.
-                $(this).parent().parent().css('visibility', 'hidden');
+                $(this).parent().parent().parent().css('visibility', 'hidden');
                 $("body").css('overflow', 'scroll');
                 $(".pagina").css('visibility', 'visible');
                 $(this).css('visibility', 'hidden');
