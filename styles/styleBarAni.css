@@ -233,6 +233,11 @@ h2{
     border-radius: 20px;
     
 }
+
+.fondo .encabezado{
+    display: flex;
+    flex-direction: row;
+}
 .fondo h2{
     color: #ffffff;
     font-size: 20px;
