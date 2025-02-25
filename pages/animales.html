@@ -1148,7 +1148,7 @@
                 height: "0",
             }, 1000, function() {
             // Animation complete.
-                $(this).parent().css('visibility', 'hidden');
+                $(this).parent().parent().css('visibility', 'hidden');
                 $("body").css('overflow', 'scroll');
                 $(".pagina").css('visibility', 'visible');
                 $(this).css('visibility', 'hidden');
