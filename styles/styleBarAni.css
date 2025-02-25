@@ -224,7 +224,7 @@ h2{
 .fondo{
     
     overflow-y: auto;
-    height: 85%;
+    height: 100%;
     width: 98%;
     background-color: #000000e1;
     display: flex;
