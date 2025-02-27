@@ -2,7 +2,7 @@
 
 
 :root{
-    --primary-color: #5a9bfd; 
+    --primary-color: #5a9bfd;
     --dark-color: #2366e0;
     --white-color: #ffffff;
     --light-color: #f1f2f6;
@@ -32,7 +32,7 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: 5px;
-    
+
     z-index: 10;
 }
 
@@ -96,10 +96,10 @@ h1{
 
 #Sargo{
     background-image: url('../images/peces/sargo.jpg');
-    
+
     /*
     background-position: center;
-    
+
     background-size:auto;
     display: flex;
     align-items: flex-end;
@@ -108,9 +108,9 @@ h1{
     background-position-x: -90px;
     background-position-y: 0px;
     background-size: cover;
-    
 
-    
+
+
 }
 #Boga{
     background-image: url('../images/peces/boga.jpg');
@@ -118,7 +118,7 @@ h1{
     background-position-x: -20px;
     background-position-y: 0px;
 
-    
+
 }
 #Vieja{
     background-image: url('../images/peces/vieja_colorada.jpg');
@@ -126,7 +126,7 @@ h1{
     background-position-x: -35px;
     background-position-y: 0px;
 
-    
+
 }
 #Palometa{
     background-image: url('../images/peces/palometa.jpg');
@@ -134,7 +134,7 @@ h1{
     background-position-x: -125px;
     background-position-y: 0px;
 
-    
+
 }
 #Galana{
     background-image: url('../images/peces/galanas6.webp');
@@ -142,7 +142,7 @@ h1{
     background-position-x: -25px;
     background-position-y: 0px;
 
-    
+
 }
 #Chopa{
     background-image: url('../images/peces/chopas4.jpg');
@@ -150,7 +150,7 @@ h1{
     background-position-x: -20px;
     background-position-y: 0px;
 
-    
+
 }
 #Barracuda{
     background-image: url('../images/peces/barracuda.jpg');
@@ -158,7 +158,7 @@ h1{
     background-position-x: -20px;
     background-position-y: 0px;
 
-    
+
 }
 #Boba{
     background-image: url('../images/Animales/TotugaBoba.jpg');
@@ -166,7 +166,7 @@ h1{
     background-position-x: -50px;
     background-position-y: 0px;
 
-    
+
 }
 #Verde{
     background-image: url('../images/Animales/tortugaVerde.jpg');
@@ -174,7 +174,7 @@ h1{
     background-position-x: -45px;
     background-position-y: 0px;
 
-    
+
 }
 #Carey{
     background-image: url('../images/Animales/Tortuga-carey.webp');
@@ -182,7 +182,7 @@ h1{
     background-position-x: -35px;
     background-position-y: 0px;
 
-    
+
 }
 #Laúd{
     background-image: url('../images/Animales/tortugaLaud.jpg');
@@ -190,7 +190,7 @@ h1{
     background-position-x: -90px;
     background-position-y: 0px;
 
-    
+
 }
 #Pardela{
     background-image: url('../images/Animales/pardela\ cenicienta.webp');
@@ -210,7 +210,7 @@ h1{
     background-size: cover;
     background-repeat: no-repeat;
 
-    
+
 }
 
 .cara h3{
@@ -220,7 +220,7 @@ h1{
     color: rgb(245, 245, 245);
     text-align: center;
     text-shadow: 2px 2px 2px rgba(0, 119, 255, 0.479);
-    
+
 }
 
 .cruz{
@@ -231,8 +231,8 @@ h1{
 .contenido{
     width: 100%;
     height: 100%;
-    
-    
+
+
 }
 
 .encabezado{
@@ -292,7 +292,7 @@ ul{
     line-height: 1.8;
     color: var(--white-color);
     background-color: transparent;
-    
+
 }
 
 nav{
@@ -320,7 +320,7 @@ nav :where(li, li a){
 
 
 nav li a {
-    
+
     text-decoration: none;
     color: inherit;
     -webkit-tap-highlight-color: transparent;
@@ -335,7 +335,10 @@ nav li a {
 
     font-size: 25px;
     z-index: 10;
-    
+
+}
+nav li a img{
+  height: 30px;
 }
 
 nav > ul > li > a:hover{
@@ -390,7 +393,7 @@ nav li.active > a > i{
 nav li.has-child.active > a i{
 
     transform: scale(0);
-} 
+}
 
 nav .sub-menu{
     position: absolute;

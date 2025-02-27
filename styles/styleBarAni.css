@@ -398,6 +398,9 @@ nav ul{
 nav :where(li, li a){
     position: relative;
 }
+nav li a img{
+  height: 30px;
+}
 
 
 nav li a {
@@ -463,6 +466,8 @@ nav li.has-child.active > a{
     90% {transform: translateY(-130px) ; background-color: var(--primary-color);}
     100% {transform: translateY(-110px) ; background-color: var(--dark-color);}
 }
+
+
 
 nav li.active > a > i{
     transform: scale(1);
