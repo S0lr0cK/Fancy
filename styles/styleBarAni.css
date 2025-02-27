@@ -184,6 +184,36 @@ h2{
     background-position-x: -70px;
     background-size: cover;
 }
+#zcomun{
+    background-image: url("../images/Animales/z cuvier fuera.jpg");
+    background-position-x: -80px;
+    background-size: cover;
+}
+#zblanville{
+    background-image: url("../images/Animales/z blainville fuera.jpg");
+    background-position-x: -40px;
+    background-size: cover;
+}
+#falsa{
+    background-image: url("../images/Animales/falsa orca fuera.jpg");
+    background-position-x: -50px;
+    background-size: cover;
+}
+#rtropical{
+    background-image: url("../images/Animales/rorcual tropical fuera.jpg");
+    background-position-x: -80px;
+    background-size: cover;
+}
+#rcomun{
+    background-image: url("../images/Animales/rorcual comun fuera.jpg");
+    background-position-x: -300px;
+    background-size: cover;
+}
+#cachalote{
+    background-image: url("../images/Animales/cachalote fuera.jpeg");
+    background-position-x: 0px;
+    background-size: cover;
+}
 
 .encabezado{
     height: 80px;
