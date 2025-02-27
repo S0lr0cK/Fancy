@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 :root{
-    --primary-color: #5a9bfd; 
+    --primary-color: #5a9bfd;
     --dark-color: #2366e0;
     --white-color: #ffffff;
     --light-color: #f1f2f6;
@@ -13,7 +13,7 @@
 * {
     margin: 0;
     padding: 0;
-    
+
 }
 
 body{
@@ -52,7 +52,7 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: 5px;
-    
+
     z-index: 10;
 }
 
@@ -189,7 +189,7 @@ h2{
     height: 80px;
     position: relative;
     padding: 30px 30px 40px;
-    
+
 }
 
 .animal .encabezado h3{
@@ -221,7 +221,7 @@ h2{
 }
 
 .fondo{
-    
+
     overflow-y: auto;
     height: 100%;
     width: 98%;
@@ -230,21 +230,43 @@ h2{
     flex-flow: column;
     align-items: center;
     border-radius: 20px;
-    
+
 }
 
 .fondo .encabezado{
-    display: flex;
-    flex-direction: row;
+  height: 130px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
 }
+
+.fondo .encabezado h2{
+  display: flex;
+  align-items: center;
+  flex-grow: 2;
+  justify-content: center;
+  padding-right: 10%;
+
+}
+.fondo .encabezado i{
+
+  font-size: 30px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .fondo h2{
     color: #ffffff;
-    font-size: 50px;
+    font-size: 30px;
 }
 .fondo img{
     width: 95%;
     border-radius: 15px;
-    
+
 }
 .fondo h3{
     text-align: center;
@@ -321,7 +343,7 @@ ul{
     line-height: 1.8;
     color: var(--white-color);
     background-color: transparent;
-    
+
 }
 
 nav{
@@ -349,7 +371,7 @@ nav :where(li, li a){
 
 
 nav li a {
-    
+
     text-decoration: none;
     color: inherit;
     -webkit-tap-highlight-color: transparent;
@@ -364,7 +386,7 @@ nav li a {
 
     font-size: 25px;
     z-index: 10;
-    
+
 }
 
 nav > ul > li > a:hover{
@@ -419,7 +441,7 @@ nav li.active > a > i{
 nav li.has-child.active > a i{
 
     transform: scale(0);
-} 
+}
 
 nav .sub-menu{
     position: absolute;
